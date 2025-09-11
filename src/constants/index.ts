@@ -1,0 +1,1 @@
+export { AUTHOR } from './author';

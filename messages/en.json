@@ -1,0 +1,10 @@
+{
+    "common": {
+        "author": "Maksym Koldun"
+    },
+    "HomePage": {
+        "test": "test",
+        "title": "Hi, i am<br></br>{name}.",
+        "subtitle": "A Ukraine based front-end developer passionate about building accessible and user friendly websites."
+    }
+}
