@@ -8,12 +8,14 @@ function AboutMe() {
   const t = useTranslations('HomePage');
 
   return (
-    <div className="flex lg:items-center justify-between lg:flex-row lg:px-27 lg:gap-20 pb-16 md:pb-20 flex-col px-4 border-b-1 border-solid border-grey-600">
+    <div className="flex lg:items-center justify-between lg:flex-row lg:px-27 lg:gap-20 pb-16 lg:pb-20 flex-col px-4 border-b-1 border-solid border-grey-600">
       <div>
-        <Typography className="font-bebas-neue mb-3 lg:mb-2" variant="heading1">
+        <Typography
+          className="font-oswald mb-3 lg:mb-2 uppercase"
+          variant="heading1"
+        >
           {t.rich('title', {
             br: () => <br />,
-            name: `${AUTHOR.firstName} ${AUTHOR.lastName}`,
           })}
         </Typography>
         <Typography className="text-grey-400 mb-8 lg:mb-10" variant="body1">
@@ -21,7 +23,7 @@ function AboutMe() {
         </Typography>
         <div className="flex gap-4 items-center lg:mb-0 mb-16">
           <PrimaryButton className="flex lg:px-6 lg:py-5 lg:gap-6 gap-3 items-center uppercase">
-            <Typography variant="body2">Contact Me</Typography>
+            <Typography variant="body2">{t('contactme')}</Typography>
             <span className="w-[10px] h-[10px] bg-black rounded-full" />
           </PrimaryButton>
           <SecondaryButton className="lg:p-4 p-3 rounded-full">
@@ -37,6 +39,7 @@ function AboutMe() {
           src={AUTHOR.image}
           alt="author"
           fill
+          priority
           className="rounded-2xl object-cover"
         />
       </div>

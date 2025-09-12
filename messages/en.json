@@ -4,7 +4,8 @@
     },
     "HomePage": {
         "test": "test",
-        "title": "Hi, i am<br></br>{name}.",
-        "subtitle": "A Ukraine based front-end developer passionate about building accessible and user friendly websites."
+        "title": "Hi, i am<br></br>Maksym Koldun.",
+        "subtitle": "A Ukraine based front-end developer passionate about building accessible and user friendly websites.",
+        "contactme": "Contact Me"
     }
 }

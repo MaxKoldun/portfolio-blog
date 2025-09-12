@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
-import { Bebas_Neue, Inter } from 'next/font/google';
+import { Inter, Oswald } from 'next/font/google';
 import './globals.css';
 
-const bebasNeue = Bebas_Neue({
+const oswald = Oswald({
   subsets: ['latin'],
   weight: '400',
-  variable: '--font-bebas-neue',
+  variable: '--font-oswald',
 });
 
 const inter = Inter({
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bebasNeue.variable} ${inter.variable} antialiased`}>
+      <body className={`${oswald.variable} ${inter.variable} antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

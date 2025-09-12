@@ -5,8 +5,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-bebas-neue: var(--font-geist-mono);
+  --font-oswald: var(--font-oswald);
   --font-inter: var(--font-inter);
+  --text-7_5xl: 5.5rem;
 
   --color-black: #000000;
   --color-white: #ffffff;
@@ -24,7 +25,7 @@
   --color-grey-300: #cfcfcf;
   --color-grey-400: #c7c7c7;
   --color-grey-500: #222222;
-  --color-grey-600: #b3b3b3;
+  --color-grey-600: #1A1A1A;
   --color-grey-700: #111111;
 }
 
@@ -35,12 +36,12 @@ body {
 }
 
 .typography-heading1 {
-  @apply text-6xl;
-  line-height: 0.95;
+  @apply text-4xl;
+  line-height: 1.5;
 
-  @variant md {
-    @apply text-8xl;
-    line-height: 0.95;
+  @variant lg {
+    @apply text-7_5xl;
+    line-height: 1.05;
   }
 }
 
@@ -49,7 +50,7 @@ body {
   @apply font-light;
   line-height: 1.5;
 
-  @variant md {
+  @variant lg {
     @apply text-xl;
   }
 }
@@ -59,7 +60,7 @@ body {
   @apply font-semibold;
   line-height: 1;
 
-  @variant md {
+  @variant lg {
     @apply text-xs;
   }
 }
@@ -69,7 +70,7 @@ body {
   line-height: 140%;
   letter-spacing: 1px;
 
-  @variant md {
+  @variant lg {
     @apply text-2xl;
     line-height: 150%;
   }
