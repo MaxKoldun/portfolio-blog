@@ -1,1 +1,1 @@
-export { GreetingSection } from './components';
+export { GreetingSection, AboutMeSection } from './components';

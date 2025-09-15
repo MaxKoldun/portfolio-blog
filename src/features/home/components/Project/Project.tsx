@@ -53,34 +53,34 @@ async function Project({ project }: { project: ProjectType }) {
             </PrimaryLink>
           )}
         </div>
-        <div className="grid xl:grid-cols-4 grid-cols-15 gap-4 py-4 border-b-1 border-sold border-grey-800">
-          <Typography className="xl:col-span-1 col-span-5" variant="body3">
+        <div className="grid xl:grid-cols-4 sm:grid-cols-15 grid-cols-20 gap-4 py-4 border-b-1 border-sold border-grey-800">
+          <Typography className="xl:col-span-1 sm:col-span-5 col-span-8" variant="body3">
             {t('featuredProjects.technologies')}
           </Typography>
           <Typography
-            className="xl:col-span-3 col-span-10 text-grey-400"
+            className="xl:col-span-3 sm:col-span-10 col-span-12 text-grey-400"
             variant="body3"
           >
             {translations.technologies}
           </Typography>
         </div>
-        <div className="grid xl:grid-cols-4 grid-cols-15 gap-4 py-4 border-b-1 border-sold border-grey-800">
-          <Typography className="xl:col-span-1 col-span-5" variant="body3">
+        <div className="grid xl:grid-cols-4 sm:grid-cols-15 grid-cols-20 gap-4 py-4 border-b-1 border-sold border-grey-800">
+          <Typography className="xl:col-span-1 sm:col-span-5 col-span-8" variant="body3">
             {t('featuredProjects.responsibilies')}
           </Typography>
           <Typography
-            className="xl:col-span-3 col-span-10 text-grey-400"
+            className="xl:col-span-3 sm:col-span-10 col-span-12 text-grey-400"
             variant="body3"
           >
             {translations.responsibilies}
           </Typography>
         </div>
-        <div className="grid xl:grid-cols-4 grid-cols-15 gap-4 py-4 border-b-1 border-sold border-grey-800">
-          <Typography className="xl:col-span-1 col-span-5" variant="body3">
+        <div className="grid xl:grid-cols-4 sm:grid-cols-15 grid-cols-20 gap-4 py-4 border-b-1 border-sold border-grey-800">
+          <Typography className="xl:col-span-1 sm:col-span-5 col-span-8" variant="body3">
             {t('featuredProjects.keyFeatures')}
           </Typography>
           <Typography
-            className="xl:col-span-3 col-span-10 text-grey-400"
+            className="xl:col-span-3 sm:col-span-10 col-span-12 text-grey-400"
             variant="body3"
           >
             {translations.keyFeatures}
