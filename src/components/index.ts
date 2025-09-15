@@ -4,3 +4,4 @@ export { PrimaryButton } from './PrimaryButton';
 export { SecondaryButton } from './SecondaryButton';
 export { Select } from './Select';
 export { LanguageSwitcher } from './LanguageSwitcher';
+export { PrimaryLink } from './PrimaryLink';

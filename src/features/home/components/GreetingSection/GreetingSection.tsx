@@ -1,14 +1,20 @@
-import { useTranslations } from 'next-intl';
+import cx from 'clsx';
 import Image from 'next/image';
 import { PrimaryButton, SecondaryButton } from '@/components';
 import { AUTHOR } from '@/constants';
 import { Typography } from '@/components';
+import { getTranslations } from 'next-intl/server';
 
-function AboutMe() {
-  const t = useTranslations('HomePage');
+async function GreetingSection({ className }: { className?: string }) {
+  const t = await getTranslations('HomePage');
 
   return (
-    <div className="flex lg:items-center justify-between lg:flex-row lg:px-27 lg:gap-20 pb-16 lg:pb-20 flex-col px-4 border-b-1 border-solid border-grey-600">
+    <div
+      className={cx(
+        'flex lg:items-center justify-between lg:flex-row lg:px-27 lg:gap-20 pb-16 lg:pb-20 flex-col px-4 border-b-1 border-solid border-grey-600',
+        className
+      )}
+    >
       <div>
         <Typography
           className="font-oswald mb-3 lg:mb-2 uppercase"
@@ -47,4 +53,4 @@ function AboutMe() {
   );
 }
 
-export { AboutMe };
+export { GreetingSection };

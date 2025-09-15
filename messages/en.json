@@ -6,6 +6,15 @@
         "test": "test",
         "title": "Hi, i am<br></br>Maksym Koldun.",
         "subtitle": "A Ukraine based front-end developer passionate about building accessible and user friendly websites.",
-        "contactme": "Contact Me"
+        "contactme": "Contact Me",
+        "featuredProjects": {
+            "title": "Featured Projects",
+            "subtitle": "Here are some of my projects that the best showcase my experience in front-end development.",
+            "projectInfo": "Project Info",
+            "technologies": "Technologies",
+            "responsibilies": "Responsibilies",
+            "keyFeatures": "Key Features",
+            "view": "View"
+        }
     }
 }

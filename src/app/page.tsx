@@ -1,14 +1,13 @@
 import { Header } from '@/components';
-import { getDefaultLanguage } from '@/actions';
-import { AboutMe } from '@/features/home';
+import { GreetingSection } from '@/features/home';
+import { ListProjects } from '@/features/home/components';
 
-export default async function Home() {
-  const locale = await getDefaultLanguage();
-
+export default function Home() {
   return (
     <div>
-      <Header className="lg:mb-0 mb-10" locale={locale} />
-      <AboutMe />
+      <Header className="lg:mb-0 mb-10" />
+      <GreetingSection className="lg:mb-20 mb-16" />
+      <ListProjects className="lg:mb-20 mb-16" />
     </div>
   );
 }

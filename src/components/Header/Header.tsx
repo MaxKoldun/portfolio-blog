@@ -1,10 +1,10 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import cx from 'clsx';
 import { Typography } from '../Typography';
 import { LanguageSwitcher } from '../LanguageSwitcher';
 
-function Header(props: { className?: string; locale: string }) {
-  const t = useTranslations('common');
+async function Header(props: { className?: string }) {
+  const t = await getTranslations('common');
 
   return (
     <div
@@ -19,7 +19,7 @@ function Header(props: { className?: string; locale: string }) {
       >
         {t('author')}
       </Typography>
-      <LanguageSwitcher locale={props.locale} />
+      <LanguageSwitcher />
     </div>
   );
 }
