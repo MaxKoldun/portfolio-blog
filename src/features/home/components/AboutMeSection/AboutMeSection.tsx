@@ -1,6 +1,4 @@
 import cx from 'clsx';
-import Image from 'next/image';
-import { PrimaryButton, SecondaryButton } from '@/components';
 import { Typography } from '@/components';
 import { getTranslations } from 'next-intl/server';
 

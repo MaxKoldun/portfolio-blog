@@ -5,3 +5,5 @@ export { SecondaryButton } from './SecondaryButton';
 export { Select } from './Select';
 export { LanguageSwitcher } from './LanguageSwitcher';
 export { PrimaryLink } from './PrimaryLink';
+export { Input } from './Input';
+export { Field } from './Field';

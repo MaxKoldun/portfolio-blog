@@ -19,15 +19,15 @@ export function PrimaryLink({
 }: PrimaryLinkProps) {
   const baseClasses = cx(
     'group inline-flex items-center gap-2 font-semibold uppercase tracking-wide relative pb-1',
-    'text-primary-500 transition-colors',
+    'text-primary-500 [&>span]:bg-primary-500 transition-colors',
     {
-      'hover:text-primary-400 active:text-primary-600': !disabled,
+      'hover:text-primary-400 active:text-primary-600 hover:[&>span]:bg-primary-400 active:[&>span]:bg-primary-600': !disabled,
       'cursor-not-allowed opacity-50': disabled,
     }
   );
 
   const underlineClasses = cx(
-    'absolute left-0 bottom-0 h-[2px] w-full bg-primary-600 transition-transform origin-left scale-x-100'
+    'absolute left-0 bottom-0 h-[2px] w-full transition-transform origin-left scale-x-100'
   );
 
   return (
