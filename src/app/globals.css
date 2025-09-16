@@ -90,6 +90,12 @@ body {
   line-height: 1.5;
 }
 
+.typography-body4 {
+  @apply text-base;
+  @apply font-light;
+  line-height: 1.75;
+}
+
 .typography-title3 {
   @apply text-xl;
   line-height: 140%;

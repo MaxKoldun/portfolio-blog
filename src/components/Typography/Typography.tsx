@@ -8,6 +8,7 @@ const variantsToElementMap = {
   body1: 'p',
   body2: 'p',
   body3: 'p',
+  body4: 'p',
   title3: 'h3',
 };
 
@@ -20,6 +21,7 @@ const variantsToClassMap = {
   body1: 'typography-body1',
   body2: 'typography-body2',
   body3: 'typography-body3',
+  body4: 'typography-body4',
 };
 
 type Variant = keyof typeof variantsToElementMap;

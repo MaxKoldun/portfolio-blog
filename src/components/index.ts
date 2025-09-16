@@ -7,3 +7,4 @@ export { LanguageSwitcher } from './LanguageSwitcher';
 export { PrimaryLink } from './PrimaryLink';
 export { Input } from './Input';
 export { Field } from './Field';
+export { Textarea } from './Textarea';

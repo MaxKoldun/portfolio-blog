@@ -24,7 +24,9 @@
          "connect": {
             "title": "Contact me",
             "subtitle1": "My email koldun.maks@gmail.com",
-            "subtitle2": "More info here in my resume"
+            "subtitle2": "More info here in my resume",
+            "submit": "Submit",
+            "watermark": "© 2025 Maksym Koldun"
         }
     }
 }

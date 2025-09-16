@@ -18,7 +18,9 @@ const FieldComponent = ({
     <div className={className}>
       {label && (
         <label htmlFor={htmlFor} className="mb-1.5 block">
-          <Typography variant="body3">{label}</Typography>
+          <Typography className="text-grey-400" variant="body4">
+            {label}
+          </Typography>
         </label>
       )}
       {children}
