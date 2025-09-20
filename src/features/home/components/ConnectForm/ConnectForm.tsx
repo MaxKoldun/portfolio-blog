@@ -11,7 +11,7 @@ async function ConnectForm({ className }: { className?: string }) {
   const t = await getTranslations('HomePage');
 
   return (
-    <div className={className}>
+    <form className={className}>
       <Field className="mb-6" label="Name">
         <Input className="w-full" />
       </Field>
@@ -27,7 +27,7 @@ async function ConnectForm({ className }: { className?: string }) {
       <PrimaryButton className="flex px-10 py-5 items-center uppercase">
         <Typography variant="body2">{t('connect.submit')}</Typography>
       </PrimaryButton>
-    </div>
+    </form>
   );
 }
 

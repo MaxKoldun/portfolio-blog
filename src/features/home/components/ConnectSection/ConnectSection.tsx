@@ -1,7 +1,8 @@
 import cx from 'clsx';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
-import { Typography, SecondaryButton, Field, Input } from '@/components';
+import { Typography, SecondaryLink } from '@/components';
+import { AUTHOR } from '@/constants';
 import { ConnectForm } from '../ConnectForm';
 
 async function ConnectSection({ className }: { className?: string }) {
@@ -28,12 +29,18 @@ async function ConnectSection({ className }: { className?: string }) {
           {t('connect.subtitle2')}
         </Typography>
         <div className="flex gap-4 items-center">
-          <SecondaryButton className="xl:p-4 p-3 rounded-full">
+          <SecondaryLink
+            href={AUTHOR.links.linkedin}
+            className="xl:p-4 p-3 rounded-full"
+          >
             <Image src="/linkedin.svg" alt="linkedin" width={24} height={24} />
-          </SecondaryButton>
-          <SecondaryButton className="xl:p-4 p-3 rounded-full">
+          </SecondaryLink>
+          <SecondaryLink
+            href={AUTHOR.links.github}
+            className="xl:p-4 p-3 rounded-full"
+          >
             <Image src="/github.svg" alt="github" width={24} height={24} />
-          </SecondaryButton>
+          </SecondaryLink>
         </div>
         <Typography
           className="xl:block hidden absolute bottom-0 text-grey-400"

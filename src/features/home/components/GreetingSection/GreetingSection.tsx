@@ -1,6 +1,6 @@
 import cx from 'clsx';
 import Image from 'next/image';
-import { PrimaryButton, SecondaryButton } from '@/components';
+import { PrimaryButton, SecondaryLink } from '@/components';
 import { AUTHOR } from '@/constants';
 import { Typography } from '@/components';
 import { getTranslations } from 'next-intl/server';
@@ -32,12 +32,18 @@ async function GreetingSection({ className }: { className?: string }) {
             <Typography variant="body2">{t('contactme')}</Typography>
             <span className="w-[10px] h-[10px] bg-black rounded-full" />
           </PrimaryButton>
-          <SecondaryButton className="lg:p-4 p-3 rounded-full">
+          <SecondaryLink
+            href={AUTHOR.links.linkedin}
+            className="lg:p-4 p-3 rounded-full"
+          >
             <Image src="/linkedin.svg" alt="linkedin" width={24} height={24} />
-          </SecondaryButton>
-          <SecondaryButton className="lg:p-4 p-3 rounded-full">
+          </SecondaryLink>
+          <SecondaryLink
+            href={AUTHOR.links.github}
+            className="lg:p-4 p-3 rounded-full"
+          >
             <Image src="/github.svg" alt="github" width={24} height={24} />
-          </SecondaryButton>
+          </SecondaryLink>
         </div>
       </div>
       <div className="mx-auto relative w-full max-w-[600px] aspect-square">
