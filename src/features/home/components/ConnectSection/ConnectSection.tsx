@@ -4,6 +4,8 @@ import { getTranslations } from 'next-intl/server';
 import { Typography, SecondaryLink } from '@/components';
 import { AUTHOR } from '@/constants';
 import { ConnectForm } from '../ConnectForm';
+import { SendEmailButton } from '../SendEmailButton';
+import { DownloadFileButton } from '../DownloadFileButton';
 
 export const ConnectSectionId = 'ConnectSectionId';
 
@@ -26,10 +28,20 @@ async function ConnectSection({ className }: { className?: string }) {
           {t('connect.title')}
         </Typography>
         <Typography className="mb-2 text-grey-400" variant="body1">
-          {t('connect.subtitle1')}
+          {t.rich('connect.subtitle1', {
+            button: (content) => (
+              <SendEmailButton email={AUTHOR.email}>{content}</SendEmailButton>
+            ),
+          })}
         </Typography>
         <Typography className="mb-10 text-grey-400" variant="body1">
-          {t('connect.subtitle2')}
+          {t.rich('connect.subtitle2', {
+            button: (content) => (
+              <DownloadFileButton path={AUTHOR.links.cv}>
+                {content}
+              </DownloadFileButton>
+            ),
+          })}
         </Typography>
         <div className="flex gap-4 items-center">
           <SecondaryLink

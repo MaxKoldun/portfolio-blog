@@ -1,4 +1,6 @@
-import { getTranslations } from 'next-intl/server';
+'use client';
+
+import { useTranslations } from 'next-intl';
 import {
   Field,
   Input,
@@ -7,22 +9,28 @@ import {
   Typography,
 } from '@/components';
 
-async function ConnectForm({ className }: { className?: string }) {
-  const t = await getTranslations('HomePage');
+function ConnectForm({ className }: { className?: string }) {
+  const t = useTranslations('HomePage');
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    console.log(e);
+  }
 
   return (
-    <form className={className}>
+    <form onSubmit={handleSubmit} className={className}>
       <Field className="mb-6" label="Name">
-        <Input className="w-full" />
+        <Input required className="w-full" />
       </Field>
       <Field className="mb-6" label="Email">
-        <Input className="w-full" />
+        <Input type="email" required className="w-full" />
       </Field>
       <Field className="mb-6" label="Subject">
-        <Input className="w-full" />
+        <Input required className="w-full" />
       </Field>
       <Field className="xl:mb-10 mb-8" label="Message">
-        <Textarea rows={4} className="w-full" />
+        <Textarea required rows={4} className="w-full" />
       </Field>
       <PrimaryButton className="flex px-10 py-5 items-center uppercase">
         <Typography variant="body2">{t('connect.submit')}</Typography>

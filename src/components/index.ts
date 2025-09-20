@@ -9,3 +9,4 @@ export { Input } from './Input';
 export { Field } from './Field';
 export { Textarea } from './Textarea';
 export { SecondaryLink } from './SecondaryLink';
+export { TextButton } from './TextButton';
