@@ -1,1 +1,6 @@
-export { GreetingSection, AboutMeSection, ConnectSection } from './components';
+export {
+  GreetingSection,
+  AboutMeSection,
+  ConnectSection,
+  ConnectSectionId,
+} from './components';

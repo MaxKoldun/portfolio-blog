@@ -5,11 +5,14 @@ import { Typography, SecondaryLink } from '@/components';
 import { AUTHOR } from '@/constants';
 import { ConnectForm } from '../ConnectForm';
 
+export const ConnectSectionId = 'ConnectSectionId';
+
 async function ConnectSection({ className }: { className?: string }) {
   const t = await getTranslations('HomePage');
 
   return (
     <div
+      id={ConnectSectionId}
       className={cx(
         'grid xl:grid-cols-2 xl:px-27 pb-16 xl:pb-20 flex-col px-4',
         className

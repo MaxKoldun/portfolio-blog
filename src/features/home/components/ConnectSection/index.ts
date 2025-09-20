@@ -1,1 +1,1 @@
-export { ConnectSection } from './ConnectSection';
+export { ConnectSection, ConnectSectionId } from './ConnectSection';

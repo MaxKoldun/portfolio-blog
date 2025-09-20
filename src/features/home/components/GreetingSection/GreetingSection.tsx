@@ -1,9 +1,10 @@
 import cx from 'clsx';
 import Image from 'next/image';
-import { PrimaryButton, SecondaryLink } from '@/components';
+import { SecondaryLink } from '@/components';
 import { AUTHOR } from '@/constants';
 import { Typography } from '@/components';
 import { getTranslations } from 'next-intl/server';
+import { ContactMeButton } from '../ContactMeButton';
 
 async function GreetingSection({ className }: { className?: string }) {
   const t = await getTranslations('HomePage');
@@ -28,10 +29,7 @@ async function GreetingSection({ className }: { className?: string }) {
           {t('subtitle')}
         </Typography>
         <div className="flex gap-4 items-center lg:mb-0 mb-16">
-          <PrimaryButton className="flex lg:px-6 lg:py-5 lg:gap-6 gap-3 items-center uppercase">
-            <Typography variant="body2">{t('contactme')}</Typography>
-            <span className="w-[10px] h-[10px] bg-black rounded-full" />
-          </PrimaryButton>
+          <ContactMeButton />
           <SecondaryLink
             href={AUTHOR.links.linkedin}
             className="lg:p-4 p-3 rounded-full"
