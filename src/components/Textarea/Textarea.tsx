@@ -8,9 +8,19 @@ interface InputProps extends React.InputHTMLAttributes<HTMLTextAreaElement> {
 }
 
 export const Textarea = memo<InputProps>(
-  ({ value, disabled, onChange, placeholder, required, className, rows }) => {
+  ({
+    value,
+    name,
+    disabled,
+    onChange,
+    placeholder,
+    required,
+    className,
+    rows,
+  }) => {
     return (
       <textarea
+        name={name}
         rows={rows}
         required={required}
         value={value}

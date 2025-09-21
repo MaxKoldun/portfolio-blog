@@ -26,7 +26,9 @@
             "subtitle1": "Моя пошта <button>koldun.maks@gmail.com</button>",
             "subtitle2": "Більше інформації тут, у моєму <button>резюме</button>",
             "submit": "Відправити",
-            "watermark": "© 2025 Максим Колдун"
+            "watermark": "© 2025 Максим Колдун",
+            "messageSent": "Повідомлення відправлено",
+            "errorSendMessage": "Помилка відправки повідомлення"
         }
     }
 }

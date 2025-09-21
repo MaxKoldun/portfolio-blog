@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
+import { ToastContainer } from '@/features/toasts';
 import { Inter, Oswald } from 'next/font/google';
 import './globals.css';
 
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${oswald.variable} ${inter.variable} antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <ToastContainer />
       </body>
     </html>
   );

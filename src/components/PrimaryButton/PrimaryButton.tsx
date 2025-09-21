@@ -19,7 +19,7 @@ export function PrimaryButton({
 }: PrimaryButtonProps) {
   const lgButtonClassNames = cx('rounded-full bg-primary-500 text-black', {
     'cursor-pointer hover:bg-primary-400 active:bg-primary-600': !(disabled || loading),
-    'cursor-not-allowed active:bg-primary-600': disabled || loading,
+    'cursor-not-allowed bg-primary-700': disabled || loading,
     'opacity-50': disabled,
   });
 

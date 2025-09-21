@@ -21,12 +21,14 @@
             "subtitle": "I am a front-end developer with over six years of experience.",
             "description": "I am a front-end developer with over 6 years of experience. I write a code following SOLID principles. I use OOP in React/Next.js projects to bind my code with a subject area as much as possible. Also a list of patterns like Factory, Strategy and Singleton are always used in my apps. I like patterns and try to use them where it is possible. I have had experience in estimating IT long-term projects. My English level allows me to communicate with foreign clients efficiently. I develop projects mostly on React/Redux and also have experience with Node js (Express/Sequelize/MySQL). My code is tested by using test libraries like Jest, Enzyme and react-testing-library. I can setup Docker and CI/CD of a project for deployment an app on a server. I am a team player and usually work by agile methodology in teams that include up to fifteen people."
         },
-         "connect": {
+        "connect": {
             "title": "Contact me",
             "subtitle1": "My email <button>koldun.maks@gmail.com</button>",
             "subtitle2": "More info here in my <button>resume</button>",
             "submit": "Submit",
-            "watermark": "© 2025 Maksym Koldun"
+            "watermark": "© 2025 Maksym Koldun",
+            "messageSent": "Message sent",
+            "errorSendMessage": "Error sending message"
         }
     }
 }
