@@ -29,6 +29,7 @@ function ConnectForm({ className }: { className?: string }) {
       setLoading(true);
       const response = await fetch('/api/mail', {
         method: 'POST',
+        next: { revalidate: false },
         headers: {
           'Content-Type': 'application/json',
         },

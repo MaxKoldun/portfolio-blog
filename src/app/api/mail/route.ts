@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { SendgridService } from '@/services';
 
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST(req: NextRequest) {
   const sendgridService = SendgridService.getInstance();
 
   const body = await req.json();
