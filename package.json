@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.6",
+    "@vercel/speed-insights": "^1.2.0",
     "clsx": "^2.1.1",
     "next": "15.5.2",
     "next-intl": "^4.3.7",
