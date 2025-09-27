@@ -26,6 +26,7 @@ async function Project({ project }: { project: ProjectType }) {
         <div className="xl:mx-0 mx-auto xl:w-1/2 rounded-2xl relative bg-grey-600 w-full max-w-[600px] aspect-square">
           <iframe
             tabIndex={-1}
+            loading="lazy"
             src={project.video}
             className="absolute inset-0 w-full h-full rounded-2xl"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -54,7 +55,10 @@ async function Project({ project }: { project: ProjectType }) {
           )}
         </div>
         <div className="grid xl:grid-cols-4 sm:grid-cols-15 grid-cols-20 gap-4 py-4 border-b-1 border-sold border-grey-800">
-          <Typography className="xl:col-span-1 sm:col-span-5 col-span-8" variant="body3">
+          <Typography
+            className="xl:col-span-1 sm:col-span-5 col-span-8"
+            variant="body3"
+          >
             {t('featuredProjects.technologies')}
           </Typography>
           <Typography
@@ -65,7 +69,10 @@ async function Project({ project }: { project: ProjectType }) {
           </Typography>
         </div>
         <div className="grid xl:grid-cols-4 sm:grid-cols-15 grid-cols-20 gap-4 py-4 border-b-1 border-sold border-grey-800">
-          <Typography className="xl:col-span-1 sm:col-span-5 col-span-8" variant="body3">
+          <Typography
+            className="xl:col-span-1 sm:col-span-5 col-span-8"
+            variant="body3"
+          >
             {t('featuredProjects.responsibilies')}
           </Typography>
           <Typography
@@ -76,7 +83,10 @@ async function Project({ project }: { project: ProjectType }) {
           </Typography>
         </div>
         <div className="grid xl:grid-cols-4 sm:grid-cols-15 grid-cols-20 gap-4 py-4 border-b-1 border-sold border-grey-800">
-          <Typography className="xl:col-span-1 sm:col-span-5 col-span-8" variant="body3">
+          <Typography
+            className="xl:col-span-1 sm:col-span-5 col-span-8"
+            variant="body3"
+          >
             {t('featuredProjects.keyFeatures')}
           </Typography>
           <Typography
