@@ -1,8 +1,8 @@
 import { getLocale, getTranslations } from 'next-intl/server';
-import Image from 'next/image';
 import ArrowSVG from '@/assets/icons/arrow.svg';
 import { Typography, PrimaryLink } from '@/components';
 import { Project as ProjectType, Locale } from '../../types';
+import { ProjectImage } from './ProjectImage';
 
 async function Project({ project }: { project: ProjectType }) {
   const t = await getTranslations('HomePage');
@@ -13,13 +13,7 @@ async function Project({ project }: { project: ProjectType }) {
     <div className="flex flex-col xl:flex-row xl:items-center xl:gap-12 gap-10">
       {project.image && (
         <div className="xl:mx-0 mx-auto xl:w-1/2 rounded-2xl relative w-full max-w-[600px] aspect-square bg-grey-600 rounded-2xl overflow-hidden">
-          <Image
-            src={project.image}
-            alt={translations.name}
-            fill
-            priority
-            className="object-contain"
-          />
+          <ProjectImage src={project.image} alt={translations.name} />
         </div>
       )}
       {project.video && (
