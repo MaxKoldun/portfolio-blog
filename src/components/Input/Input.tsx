@@ -12,6 +12,7 @@ export const Input = memo<InputProps>(
     type = 'text',
     disabled,
     onChange,
+    id,
     pattern,
     title,
     placeholder,
@@ -22,6 +23,7 @@ export const Input = memo<InputProps>(
   }) => {
     return (
       <input
+        id={id}
         name={name}
         required={required}
         value={value}

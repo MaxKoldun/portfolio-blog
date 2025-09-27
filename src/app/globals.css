@@ -2,21 +2,13 @@
 
 /* root is required for react-toastify to override toasts theme variables */
 :root {
-  --breakpoint-sm: 640px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-
-  --toastify-color-error: #DB1F35;
-  --toastify-color-success: #6BBC6F;
+  --toastify-color-error: #db1f35;
+  --toastify-color-success: #6bbc6f;
   --toastify-font-family: var(--font-inter), Helvetica, sans-serif;
 }
 
 /* @theme is used to set up tailwind variables */
 @theme {
-  --breakpoint-sm: 640px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -78,6 +70,10 @@ body {
     @apply text-4xl;
     line-height: 125%;
   }
+}
+
+.typography-heading4 {
+  @apply text-base;
 }
 
 .typography-body1 {

@@ -15,11 +15,13 @@ export const Textarea = memo<InputProps>(
     onChange,
     placeholder,
     required,
+    id,
     className,
     rows,
   }) => {
     return (
       <textarea
+        id={id}
         name={name}
         rows={rows}
         required={required}

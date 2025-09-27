@@ -56,17 +56,29 @@ function ConnectForm({ className }: { className?: string }) {
 
   return (
     <form key={resetForm} onSubmit={handleSubmit} className={className}>
-      <Field className="mb-6" label="Name">
-        <Input name="name" required className="w-full" />
+      <Field htmlFor="name" className="mb-6" label="Name">
+        <Input id="name" name="name" required className="w-full" />
       </Field>
-      <Field className="mb-6" label="Email">
-        <Input name="email" type="email" required className="w-full" />
+      <Field htmlFor="email" className="mb-6" label="Email">
+        <Input
+          id="email"
+          name="email"
+          type="email"
+          required
+          className="w-full"
+        />
       </Field>
-      <Field className="mb-6" label="Subject">
-        <Input name="subject" required className="w-full" />
+      <Field htmlFor="subject" className="mb-6" label="Subject">
+        <Input id="subject" name="subject" required className="w-full" />
       </Field>
-      <Field className="xl:mb-10 mb-8" label="Message">
-        <Textarea name="message" required rows={4} className="w-full" />
+      <Field htmlFor="message" className="xl:mb-10 mb-8" label="Message">
+        <Textarea
+          id="message"
+          name="message"
+          required
+          rows={4}
+          className="w-full"
+        />
       </Field>
       <PrimaryButton
         loading={loading}

@@ -13,7 +13,12 @@ function LanguageSwitcher() {
   }
 
   return (
-    <Select value={locale} onChange={handleUpdateLocale} list={LANGUAGES} />
+    <Select
+      ariaLabel="language-switcher"
+      value={locale}
+      onChange={handleUpdateLocale}
+      list={LANGUAGES}
+    />
   );
 }
 

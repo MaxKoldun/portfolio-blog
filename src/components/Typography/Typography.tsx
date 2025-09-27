@@ -3,8 +3,8 @@ import { forwardRef, type ElementType, type ReactNode } from 'react';
 const variantsToElementMap = {
   heading1: 'h1',
   heading2: 'h2',
-  heading3: 'h3',
-  heading4: 'h4',
+  heading3: 'h2',
+  heading4: 'h3',
   body1: 'p',
   body2: 'p',
   body3: 'p',

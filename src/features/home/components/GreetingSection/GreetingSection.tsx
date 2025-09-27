@@ -1,6 +1,7 @@
 import cx from 'clsx';
 import Image from 'next/image';
 import { SecondaryLink } from '@/components';
+import { breakpoints } from '@/constants/breakpoints';
 import { AUTHOR } from '@/constants';
 import { Typography } from '@/components';
 import { getTranslations } from 'next-intl/server';
@@ -50,7 +51,9 @@ async function GreetingSection({ className }: { className?: string }) {
           alt="author"
           fill
           priority
+          fetchPriority="high"
           className="rounded-2xl object-cover"
+          sizes={`(max-width: ${breakpoints.sm}) 400px, (max-width: ${breakpoints.lg}) 600px, 600px`}
         />
       </div>
     </div>

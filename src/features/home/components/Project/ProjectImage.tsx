@@ -1,9 +1,7 @@
-'use client';
 import Image from 'next/image';
 import { breakpoints } from '@/constants/breakpoints';
 
 function ProjectImage({ src, alt }: { src: string; alt: string }) {
-
   return (
     <Image
       src={src}

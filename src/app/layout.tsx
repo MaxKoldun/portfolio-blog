@@ -17,6 +17,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  title: 'Portfolio - Maksym Koldun',
+  description: 'Maksym Koldun - Frontend Developer',
 };
 
 export default function RootLayout({
@@ -27,9 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${oswald.variable} ${inter.variable} antialiased`}>
-        <NextIntlClientProvider>
-          {children}
-        </NextIntlClientProvider>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <ToastContainer />
         <SpeedInsights />
       </body>

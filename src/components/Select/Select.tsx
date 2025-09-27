@@ -8,17 +8,20 @@ type Option<T extends string> = {
 type SelectProps<T extends string> = {
   list: Option<T>[];
   value: T;
+  ariaLabel?: string;
   onChange?: (value: ChangeEvent<HTMLSelectElement>) => void;
 };
 
 export function Select<T extends string>({
   list,
   onChange,
+  ariaLabel,
   value,
 }: SelectProps<T>) {
   return (
     <div className="relative inline-block w-40">
       <select
+        aria-label={ariaLabel}
         value={value}
         onChange={onChange}
         className="
