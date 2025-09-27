@@ -8,7 +8,11 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
       alt={alt}
       fill
       priority
-      sizes={`(max-width: ${breakpoints.sm}) 400px, (max-width: ${breakpoints.lg}) 600px, 600px`}
+      sizes={`
+        (max-width: ${breakpoints.md}) 100vw,
+        (max-width: ${breakpoints.xl}) 50vw,
+        600px
+      `}
       className="object-contain"
     />
   );
