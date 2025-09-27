@@ -1,11 +1,8 @@
 'use client';
 import Image from 'next/image';
-import { useRootThemeContext } from '@/app/layouts';
+import { breakpoints } from '@/constants/breakpoints';
 
 function ProjectImage({ src, alt }: { src: string; alt: string }) {
-  const context = useRootThemeContext();
-  const breakPointLg = context.getCSSProperty('--breakpoint-lg');
-  const breakPointSm = context.getCSSProperty('--breakpoint-sm');
 
   return (
     <Image
@@ -13,7 +10,7 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
       alt={alt}
       fill
       priority
-      sizes={`(max-width: ${breakPointSm}) 400px, (max-width: ${breakPointLg}) 600px, 600px`}
+      sizes={`(max-width: ${breakpoints.sm}) 400px, (max-width: ${breakpoints.lg}) 600px, 600px`}
       className="object-contain"
     />
   );

@@ -3,7 +3,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { ToastContainer } from '@/features/toasts';
 import { Inter, Oswald } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { RootThemeLayout } from './layouts';
 import './globals.css';
 
 const oswald = Oswald({
@@ -29,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${oswald.variable} ${inter.variable} antialiased`}>
         <NextIntlClientProvider>
-          <RootThemeLayout>{children}</RootThemeLayout>
+          {children}
         </NextIntlClientProvider>
         <ToastContainer />
         <SpeedInsights />
