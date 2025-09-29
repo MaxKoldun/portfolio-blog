@@ -54,7 +54,6 @@ async function GreetingSection({ className }: { className?: string }) {
           fetchPriority="high"
           className="rounded-2xl object-cover"
           sizes={`
-            (max-width: ${breakpoints.md}) 100vw,
             (max-width: ${breakpoints.xl}) 50vw,
             600px
           `}

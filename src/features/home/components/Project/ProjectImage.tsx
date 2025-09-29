@@ -7,9 +7,8 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
       src={src}
       alt={alt}
       fill
-      priority
+      loading='lazy'
       sizes={`
-        (max-width: ${breakpoints.md}) 100vw,
         (max-width: ${breakpoints.xl}) 50vw,
         600px
       `}
