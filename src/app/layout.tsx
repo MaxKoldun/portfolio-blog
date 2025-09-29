@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { ToastContainer } from '@/features/toasts';
 import { Inter, Oswald } from 'next/font/google';
 import SpeedInsights from './SpeedInsights';
-import './globals.css';
+import Styles from './Styles';
 
 const oswald = Oswald({
   subsets: ['latin'],
@@ -32,6 +32,7 @@ export default function RootLayout({
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <ToastContainer />
         <SpeedInsights />
+        <Styles />
       </body>
     </html>
   );
