@@ -89,7 +89,7 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    image: '/projects/restaurantapp.png',
+    image: '/projects/restaurantapp.webp',
     translations: {
       en: {
         name: 'NDA Restaurant App',
