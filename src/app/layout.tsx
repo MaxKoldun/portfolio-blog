@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
-// import { NextIntlClientProvider } from 'next-intl';
-import NextIntlClientProvider from './NextIntlClientProvider';
+import { NextIntlClientProvider } from 'next-intl';
 import { ToastContainer } from '@/features/toasts';
 import { Inter, Oswald } from 'next/font/google';
 import SpeedInsights from './SpeedInsights';
