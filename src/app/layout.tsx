@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { ToastContainer } from '@/features/toasts';
 import { Inter, Oswald } from 'next/font/google';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+// import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
 const oswald = Oswald({
@@ -17,8 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Portfolio - Maksym Koldun',
-  description: 'Maksym Koldun - Frontend Developer',
+
 };
 
 export default function RootLayout({
@@ -31,7 +30,7 @@ export default function RootLayout({
       <body className={`${oswald.variable} ${inter.variable} antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <ToastContainer />
-        <SpeedInsights />
+        {/* <SpeedInsights /> */}
       </body>
     </html>
   );
