@@ -13,7 +13,7 @@ async function GreetingSection({ className }: { className?: string }) {
   return (
     <div
       className={cx(
-        'flex lg:items-center justify-between lg:flex-row lg:px-27 lg:gap-20 pb-16 lg:pb-20 flex-col px-4 border-b-1 border-solid border-grey-600',
+        'flex xl:items-center justify-between lg:px-27 lg:gap-20 pb-16 lg:pb-20 flex-col xl:flex-row px-4',
         className
       )}
     >
